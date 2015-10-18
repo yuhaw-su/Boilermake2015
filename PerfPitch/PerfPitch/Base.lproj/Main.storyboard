@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W8F-gp-hyy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Listen-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="ListenViewController" customModule="PerfPitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the note to hear the pitch!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLh-Ko-0fJ">
+                                <rect key="frame" x="145" y="356" width="311" height="26.5"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26.5" id="Mzw-6s-fcn"/>
+                                    <constraint firstAttribute="width" constant="311" id="fVV-ZJ-jRv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b21-Ze-TeL">
+                                <rect key="frame" x="277" y="407" width="46" height="136"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="pqj-HU-ZgI"/>
+                                    <constraint firstAttribute="width" constant="46" id="uey-ne-SGG"/>
+                                </constraints>
+                                <state key="normal" title="F" backgroundImage="whiteKey">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Py6-bZ-PgS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TJ-OC-snw">
+                                <rect key="frame" x="323" y="407" width="46" height="136"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="6bt-pz-vVl"/>
+                                    <constraint firstAttribute="height" constant="136" id="JAa-Gz-r1h"/>
+                                </constraints>
+                                <state key="normal" title="G" backgroundImage="whiteKey">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="aPR-fo-sRx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acS-cN-LBp">
+                                <rect key="frame" x="369" y="407" width="46" height="136"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="kTQ-Zs-s0F"/>
+                                    <constraint firstAttribute="width" constant="46" id="nCN-gA-Gjx"/>
+                                </constraints>
+                                <state key="normal" title="A" backgroundImage="whiteKey">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="YIl-fT-jg6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lls-Ji-2mC">
+                                <rect key="frame" x="415" y="407" width="46" height="136"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="XS5-NG-vHz"/>
+                                    <constraint firstAttribute="height" constant="136" id="d7u-we-B9Y"/>
+                                </constraints>
+                                <state key="normal" title="B" backgroundImage="whiteKey">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="2Av-nx-kkq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0P-FN-sUl">
+                                <rect key="frame" x="231" y="407" width="46" height="136"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="YSS-D2-w1t"/>
+                                    <constraint firstAttribute="height" constant="136" id="clI-ai-wc1"/>
+                                </constraints>
+                                <state key="normal" title="E" backgroundImage="whiteKey">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="YUq-hv-eXK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4U-hX-bSZ">
+                                <rect key="frame" x="185" y="407" width="46" height="136"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="NSy-63-1ES"/>
+                                    <constraint firstAttribute="height" constant="136" id="jSJ-xk-hHl"/>
+                                </constraints>
+                                <state key="normal" title="D" backgroundImage="whiteKey">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="uYN-D4-29f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auh-tb-CkF">
+                                <rect key="frame" x="139" y="407" width="46" height="136"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="01t-Zk-NmX"/>
+                                    <constraint firstAttribute="height" constant="136" id="RYz-My-mKs"/>
+                                </constraints>
+                                <state key="normal" title="C" backgroundImage="whiteKey">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="0iR-5b-PZ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ALV-Jn-MAm">
+                                <rect key="frame" x="171" y="407" width="27" height="93"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="MaJ-Fp-xlQ"/>
+                                    <constraint firstAttribute="width" constant="27" id="lbv-I1-KHu"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blackKey">
+                                    <string key="title">C#
+D♭</string>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="lzA-jA-3Fv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Env-Zv-NF4">
+                                <rect key="frame" x="20" y="20" width="46.5" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-x3-jMU">
+                                <rect key="frame" x="217" y="407" width="30" height="93"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="AIt-MV-iuF"/>
+                                    <constraint firstAttribute="width" constant="30" id="x6M-4O-wys"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blackKey">
+                                    <string key="title">D#
+E♭</string>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="QoL-e5-H4m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jNT-zw-mLf">
+                                <rect key="frame" x="308" y="407" width="30" height="93"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="5f2-c0-YGd"/>
+                                    <constraint firstAttribute="height" constant="93" id="HUB-Lz-4j2"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blackKey">
+                                    <string key="title">F#
+G♭</string>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="mLg-la-JWD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TEP-pL-USe">
+                                <rect key="frame" x="354" y="407" width="30" height="93"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Jq2-ey-Exx"/>
+                                    <constraint firstAttribute="height" constant="93" id="gxd-eY-lh1"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blackKey">
+                                    <string key="title">G#
+A♭</string>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="bc6-qz-fH4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="F3O-wd-cvT">
+                                <rect key="frame" x="400" y="407" width="30" height="93"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="bP3-GC-SuL"/>
+                                    <constraint firstAttribute="height" constant="93" id="d8m-Mq-1Jm"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blackKey">
+                                    <string key="title">A#
+B♭</string>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessPitch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Ljl-Se-qNO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wu1-Tn-JdV">
+                                <rect key="frame" x="504" y="14" width="76" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetScore" destination="9pv-A4-QxB" eventType="touchUpInside" id="sjc-vG-OO5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcU-JV-opI">
+                                <rect key="frame" x="207" y="117" width="186.5" height="208"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208" id="0tP-n2-0yd"/>
+                                    <constraint firstAttribute="width" constant="186.5" id="c1d-jx-JP3"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="note"/>
+                                <connections>
+                                    <action selector="playPitchOrProceed" destination="9pv-A4-QxB" eventType="touchUpInside" id="28T-WJ-vo6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.58322906643038941" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ALV-Jn-MAm" firstAttribute="leading" secondItem="auh-tb-CkF" secondAttribute="trailing" constant="-14" id="0Cg-dr-tEb"/>
+                            <constraint firstItem="TEP-pL-USe" firstAttribute="leading" secondItem="jNT-zw-mLf" secondAttribute="trailing" constant="16" id="28S-2g-7JP"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="i0P-FN-sUl" secondAttribute="bottom" constant="8" id="3tO-yW-ZJr"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ffU-x3-jMU" secondAttribute="bottom" constant="51" id="46v-pD-kIN"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="auh-tb-CkF" secondAttribute="bottom" constant="8" id="4cJ-6M-ydu"/>
+                            <constraint firstItem="jNT-zw-mLf" firstAttribute="leading" secondItem="ffU-x3-jMU" secondAttribute="trailing" constant="61" id="6UY-Qz-EZs"/>
+                            <constraint firstItem="i0P-FN-sUl" firstAttribute="leading" secondItem="G4U-hX-bSZ" secondAttribute="trailing" id="7iW-bi-lVr"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="F3O-wd-cvT" secondAttribute="bottom" constant="51" id="82k-gA-xmx"/>
+                            <constraint firstItem="G4U-hX-bSZ" firstAttribute="leading" secondItem="auh-tb-CkF" secondAttribute="trailing" id="8nB-AP-PVF"/>
+                            <constraint firstItem="Env-Zv-NF4" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="EFM-Zc-Vks"/>
+                            <constraint firstItem="b21-Ze-TeL" firstAttribute="top" secondItem="WLh-Ko-0fJ" secondAttribute="bottom" constant="24.5" id="Gxe-eM-O32"/>
+                            <constraint firstItem="8TJ-OC-snw" firstAttribute="leading" secondItem="b21-Ze-TeL" secondAttribute="trailing" id="MMt-7N-OCV"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="acS-cN-LBp" secondAttribute="bottom" constant="8" id="MYY-jS-aaH"/>
+                            <constraint firstItem="F3O-wd-cvT" firstAttribute="leading" secondItem="TEP-pL-USe" secondAttribute="trailing" constant="16" id="Omz-kI-XPQ"/>
+                            <constraint firstItem="acS-cN-LBp" firstAttribute="leading" secondItem="8TJ-OC-snw" secondAttribute="trailing" id="Rne-Xh-JND"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="TEP-pL-USe" secondAttribute="bottom" constant="51" id="SjB-kv-MJa"/>
+                            <constraint firstItem="Wu1-Tn-JdV" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-6" id="TqO-hh-Al1"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="b21-Ze-TeL" secondAttribute="bottom" constant="8" id="VQv-Wl-5EP"/>
+                            <constraint firstItem="WLh-Ko-0fJ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="WvR-S3-3OL"/>
+                            <constraint firstItem="WLh-Ko-0fJ" firstAttribute="top" secondItem="XcU-JV-opI" secondAttribute="bottom" constant="31" id="Y9o-X3-NUw"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="lls-Ji-2mC" secondAttribute="bottom" constant="8" id="aLc-BB-oZi"/>
+                            <constraint firstItem="lls-Ji-2mC" firstAttribute="leading" secondItem="acS-cN-LBp" secondAttribute="trailing" id="akg-Bx-QZa"/>
+                            <constraint firstItem="b21-Ze-TeL" firstAttribute="leading" secondItem="i0P-FN-sUl" secondAttribute="trailing" id="bEz-U9-Wig"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="jNT-zw-mLf" secondAttribute="bottom" constant="51" id="bVy-l3-3yz"/>
+                            <constraint firstItem="ffU-x3-jMU" firstAttribute="leading" secondItem="ALV-Jn-MAm" secondAttribute="trailing" constant="19" id="cCV-b0-dEh"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ALV-Jn-MAm" secondAttribute="bottom" constant="51" id="gVX-ZW-TUU"/>
+                            <constraint firstItem="b21-Ze-TeL" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="gWS-n6-Pz2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wu1-Tn-JdV" secondAttribute="trailing" id="pZ9-hB-wfX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Env-Zv-NF4" secondAttribute="leading" id="uYl-QW-wvQ"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="8TJ-OC-snw" secondAttribute="bottom" constant="8" id="xfj-bK-i1k"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="G4U-hX-bSZ" secondAttribute="bottom" constant="8" id="y2S-sz-JLo"/>
+                            <constraint firstItem="XcU-JV-opI" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="z2y-8v-t2W"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Listen" image="noteIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="Env-Zv-NF4" id="aqG-If-4bZ"/>
+                        <outlet property="topLabel" destination="WLh-Ko-0fJ" id="leu-9W-ApO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Sing-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SingViewController" customModule="PerfPitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a6-zF-VpH">
+                                <rect key="frame" x="185" y="185" width="230" height="230"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="6V0-jL-i0k"/>
+                                    <constraint firstAttribute="height" constant="230" id="zgY-ab-gDn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="175"/>
+                                <state key="normal" image="mic">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startRecordingOrPlayback:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="tZL-ZU-IlN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the mic to begin!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kO-Id-qBC">
+                                <rect key="frame" x="197" y="455" width="205.5" height="26.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sing a C!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgg-0V-Aoe">
+                                <rect key="frame" x="240" y="99" width="119.5" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPB-eH-nLo">
+                                <rect key="frame" x="244" y="504" width="112" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Try Again?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset" destination="8rJ-Kc-sve" eventType="touchUpInside" id="wmc-k4-Mhs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb8-kb-Wj3">
+                                <rect key="frame" x="226" y="150" width="148" height="298.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="250"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recordingDotFilled" translatesAutoresizingMaskIntoConstraints="NO" id="DMQ-nq-fqZ">
+                                <rect key="frame" x="185" y="185" width="230" height="230"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="ZEK-Rw-Xdw"/>
+                                    <constraint firstAttribute="width" constant="230" id="grO-Yo-nPW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transparent" translatesAutoresizingMaskIntoConstraints="NO" id="1EJ-wD-yvk">
+                                <rect key="frame" x="185" y="185" width="230" height="256"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="msI-rI-K29"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recordingDot" translatesAutoresizingMaskIntoConstraints="NO" id="G4n-dV-eGS">
+                                <rect key="frame" x="185" y="185" width="230" height="230"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="dLP-zj-7ZX"/>
+                                    <constraint firstAttribute="height" constant="230" id="fdo-L4-8QG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.46274509803921571" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kb8-kb-Wj3" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="2rf-uv-Vom"/>
+                            <constraint firstItem="1EJ-wD-yvk" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="BRK-H4-ENt"/>
+                            <constraint firstItem="6a6-zF-VpH" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="C7s-3d-uJS"/>
+                            <constraint firstItem="DMQ-nq-fqZ" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="Ewu-zN-CJf"/>
+                            <constraint firstItem="hPB-eH-nLo" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="GyV-5F-0k6"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="hPB-eH-nLo" secondAttribute="bottom" constant="8" id="Ibt-A8-Dse"/>
+                            <constraint firstItem="1EJ-wD-yvk" firstAttribute="top" secondItem="Tgg-0V-Aoe" secondAttribute="bottom" constant="50" id="J1V-F5-Ija"/>
+                            <constraint firstItem="0kO-Id-qBC" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Q3M-CF-Q6f"/>
+                            <constraint firstItem="6a6-zF-VpH" firstAttribute="top" secondItem="Tgg-0V-Aoe" secondAttribute="bottom" constant="50" id="Svb-gU-FAS"/>
+                            <constraint firstItem="G4n-dV-eGS" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="XDa-0L-lZz"/>
+                            <constraint firstItem="Kb8-kb-Wj3" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="bKh-jM-Bzl"/>
+                            <constraint firstItem="G4n-dV-eGS" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="gLO-I8-CwU"/>
+                            <constraint firstItem="6a6-zF-VpH" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="sr9-mS-91k"/>
+                            <constraint firstItem="DMQ-nq-fqZ" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="tga-ie-FN3"/>
+                            <constraint firstItem="0kO-Id-qBC" firstAttribute="top" secondItem="6a6-zF-VpH" secondAttribute="bottom" constant="40" id="ula-cf-UK2"/>
+                            <constraint firstItem="Tgg-0V-Aoe" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="xBa-3B-KY3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sing" image="micIcon" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="0kO-Id-qBC" id="E8L-ai-Ekp"/>
+                        <outlet property="micButton" destination="6a6-zF-VpH" id="XjB-cR-UBn"/>
+                        <outlet property="recordBack" destination="DMQ-nq-fqZ" id="4jw-aV-VPm"/>
+                        <outlet property="recordMiddle" destination="1EJ-wD-yvk" id="YJZ-ny-sgU"/>
+                        <outlet property="recordTop" destination="G4n-dV-eGS" id="BtI-De-LRg"/>
+                        <outlet property="recordingLabel" destination="Kb8-kb-Wj3" id="giS-4x-7Ya"/>
+                        <outlet property="resetButton" destination="hPB-eH-nLo" id="wBw-UA-q3c"/>
+                        <outlet property="topLabel" destination="Tgg-0V-Aoe" id="06G-dq-8b3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0l8-ON-lvr">
+            <objects>
+                <viewController id="W8F-gp-hyy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="czf-GB-sav"/>
+                        <viewControllerLayoutGuide type="bottom" id="mYe-QN-Ozl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dfr-FO-M7M">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68v-eY-N8M">
+                                <rect key="frame" x="20" y="28" width="560" height="493"/>
+                                <animations/>
+                                <string key="text">A recent study done by the University of Chicago suggests that perfect pitch, the ability to recognize and produce accurate tones without reference, is “an ability that is teachable”. About 1 in 10,000 people have perfect pitch.
+
+Let’s make you that one.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbn-nj-42g">
+                                <rect key="frame" x="387" y="532" width="193" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Start Training">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="KwU-Ox-teU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="68v-eY-N8M" secondAttribute="leading" id="Gsy-UK-g7R"/>
+                            <constraint firstItem="mYe-QN-Ozl" firstAttribute="top" secondItem="68v-eY-N8M" secondAttribute="bottom" constant="79" id="XEZ-Or-Aer"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="68v-eY-N8M" secondAttribute="trailing" id="Ycn-eH-vTw"/>
+                            <constraint firstItem="68v-eY-N8M" firstAttribute="top" secondItem="czf-GB-sav" secondAttribute="bottom" constant="8" id="cSl-3j-Edi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lbn-nj-42g" secondAttribute="trailing" id="eeU-WY-zS1"/>
+                            <constraint firstItem="mYe-QN-Ozl" firstAttribute="top" secondItem="Lbn-nj-42g" secondAttribute="bottom" constant="20" id="uUP-ea-ebu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRc-gC-oAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-721" y="0.0"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blackKey" width="40" height="100"/>
+        <image name="mic" width="512" height="512"/>
+        <image name="micIcon" width="30" height="30"/>
+        <image name="note" width="444" height="595"/>
+        <image name="noteIcon" width="30" height="30"/>
+        <image name="recordingDot" width="256" height="256"/>
+        <image name="recordingDotFilled" width="256" height="256"/>
+        <image name="transparent" width="256" height="256"/>
+        <image name="whiteKey" width="40" height="100"/>
+    </resources>
+</document>
